@@ -1,28 +1,22 @@
-== README
+== Seleção do LAViD
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Desenvolvido com:
 
-Things you may want to cover:
+* Testes com RSpec
 
-* Ruby version
+* HAML
 
-* System dependencies
+* Git
 
-* Configuration
+* RVM
 
-* Database creation
+== Rodando o Projeto
 
-* Database initialization
+Primeiro:
+<tt>bundle install</tt>
 
-* How to run the test suite
+Depois:
+<tt>rails s</tt>
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Para rodar os testes:
+<tt>bundle exec rspec</tt>

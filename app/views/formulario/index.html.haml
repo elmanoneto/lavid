@@ -1,0 +1,7 @@
+%h1 Seleção do LAViD
+%form{:action => "index", :method => "post", :id => "form"}
+	%input{:type => "text", :name => "texto", :id => "texto"}
+	%button{type: "submit"} Enviar
+%p
+	Resultado:
+	.resultado #{@msg}

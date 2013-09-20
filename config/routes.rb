@@ -1,4 +1,5 @@
 Lavid::Application.routes.draw do
+  get "formulario/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +54,8 @@ Lavid::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  root :to => 'formulario#index'
+  get '/index', :to => 'formulario#index', :as => ''
+  post '/index', :to => 'formulario#index', :as => 'index'
 end

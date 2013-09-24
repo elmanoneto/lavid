@@ -7,7 +7,7 @@ class FormularioController < ApplicationController
 	  	@msg.reverse!.upcase!
 	  	respond_to do |format|
 		    format.json {render json: @msg, :status => :ok}
-		end
+		  end
   	end
   end
 end

@@ -19,9 +19,9 @@ describe FormularioController do
 	    	@response.body.should == 'DCBA'
 	    end
 
-	    it "teste com simbolos" do
-	    	post :index, texto: '£®©œþƔ', format: :json
-	    	@response.body.should == 'Ɣþœ©®£'
+	    it "Teste com muitos caracteres" do
+	    	post :index, texto: 'dsfasdfsdfasdfsadfasdfasdfasdfasdfsadfdfdfasdfsdfasdfasdfasdfasdasdfasdfasdfasdfasdfsdafsda', format: :json
+	    	@response.body.should == 'ADSFADSFDSAFDSAFDSAFDSAFDSADSAFDSAFDSAFDSAFDSFDSAFDFDFDASFDSAFDSAFDSAFDSAFDASFDSAFDSFDSAFSD'
 	    end
 
 	end
